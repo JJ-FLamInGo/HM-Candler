@@ -1,0 +1,23 @@
+.header {
+  background-color: var(--color-pink);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.phone {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url(../images/phone.svg);
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 20px;
+		left: -23px;
+		top: 3px;
+	}
+}

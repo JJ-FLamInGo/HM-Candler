@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-dark);
+  font-family: var(--font-family-comfortaa);
+	font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.menu {
+	&__btn {
+		display: none;
+		width: 30px;
+		height: 25px;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		border-radius: 0;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	span {
+		height: 1px;
+		background-color: var(--color-brown);
+		width: 100%;
+	}
+}
