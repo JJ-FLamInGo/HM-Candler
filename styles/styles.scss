@@ -3,6 +3,9 @@
 	'variables',
 	'globals',
 	'utils',
+	'components/header',
+	'components/footer',
+	'components/main',
 	'media';
 
-	@import 'components/header', 'components/footer';
+	// @import 'components/header', 'components/main', 'components/footer';

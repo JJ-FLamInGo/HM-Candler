@@ -83,7 +83,6 @@ p:where(:not([class]):not(:last-child)) {
  */
 img {
   display: block;
-  max-width: 100%;
 }
 
 /**
@@ -187,14 +186,18 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 .menu__btn {
   display: none;
   width: 30px;
   height: 25px;
-  border: none;
   background-color: transparent;
-  padding: 0;
-  border-radius: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -219,6 +222,90 @@ ul {
   text-transform: uppercase;
 }
 
+.header {
+  background-color: var(--color-pink);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone {
+  position: relative;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: 3px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.email {
+  margin: 17px 0;
+}
+
+.main {
+  background-color: var(--color-pink);
+  overflow-x: clip;
+  padding-bottom: 150px;
+}
+.main .top {
+  padding: 40px 0 100px;
+}
+.main .top__inner {
+  position: relative;
+}
+.main .top__content {
+  max-width: 370px;
+  padding: 150px 0 250px;
+}
+.main .top__title {
+  font-family: var(--font-family-yeseva);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.main .top__text {
+  font-family: var(--font-family-comfortaa);
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+.main .top__buy {
+  background-color: var(--color-yellow);
+  padding: 18px 54px;
+  font-family: var(--font-family-comfortaa);
+  font-size: 14px;
+  font-weight: 600;
+}
+.main .top__img {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  max-width: 100%;
+}
+
 @media (max-width: 1000px) {
   body {
     font-size: 14px;
@@ -226,6 +313,20 @@ ul {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .main .top__content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+  .main .top__img {
+    top: 80px;
+    left: 300px;
+  }
+  .main .top__img-l {
+    width: 655px;
+  }
+  .main .top__text {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 900px) {
@@ -252,7 +353,21 @@ ul {
     width: 14px;
     height: 14px;
     left: -16px;
-    top: 0px !important;
+    top: 0px;
+  }
+  .main .top__content {
+    width: 230px;
+  }
+  .main .top__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .main .top__text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .main .top__img {
+    left: 180px;
   }
 }
 @media (max-width: 640px) {
@@ -301,49 +416,55 @@ ul {
     flex-direction: column;
   }
 }
-.header {
-  background-color: var(--color-pink);
+@media (max-width: 480px) {
+  .main {
+    padding-bottom: 50px;
+  }
+  .main .top {
+    padding: 30px 0 50px;
+  }
+  .main .top__content {
+    width: 180px;
+  }
+  .main .top__title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .main .top__text {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+  .main .top__img {
+    left: 167px;
+  }
+  .main .top__img-l {
+    width: 309px;
+  }
+  .main .top__buy {
+    font-size: 10px;
+    padding: 14px 41px;
+  }
 }
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.phone {
-  position: relative;
-}
-.phone::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/phone.svg);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: -23px;
-  top: 3px;
-}
-
-.footer {
-  padding-top: 40px;
-  padding-bottom: 35px;
-}
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__contacts {
-  display: flex;
-  flex-direction: column;
-}
-.footer__social {
-  display: flex;
-  gap: 15px;
-}
-
-.email {
-  margin: 17px 0;
+@media (max-width: 360px) {
+  .main .top__content {
+    width: 200px;
+    padding: 20px 0 0;
+  }
+  .main .top__title {
+    font-size: 18px;
+  }
+  .main .top__text {
+    position: relative;
+    z-index: 1;
+    font-size: 10px;
+  }
+  .main .top__img {
+    right: 0;
+    top: 0;
+  }
+  .main .top__img-l {
+    width: 185px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

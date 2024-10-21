@@ -23,15 +23,19 @@ ul {
 	list-style: none;
 }
 
+button {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+	cursor: pointer;
+}
+
 .menu {
 	&__btn {
 		display: none;
 		width: 30px;
 		height: 25px;
-		border: none;
 		background-color: transparent;
-		padding: 0;
-		border-radius: 0;
 		flex-direction: column;
 		justify-content: space-between;
 	}
