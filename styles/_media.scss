@@ -6,24 +6,32 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-	.main {
-		.top {
-			&__content {
-				width: 333px;
-				padding: 95px 0 70px;
-			}
-			&__img {
-				top: 80px;
-				left: 300px;
-				&-l {
-					width: 655px;
-				}
-			}
-			&__text {
-				margin-bottom: 30px;
-			}
-		}
-	}
+  .main {
+    .top {
+      &__content {
+        width: 333px;
+        padding: 95px 0 70px;
+      }
+      &__img {
+        top: 80px;
+        left: 300px;
+        &-l {
+          width: 655px;
+        }
+      }
+      &__text {
+        margin-bottom: 30px;
+      }
+    }
+    .about {
+      &__content {
+        min-width: 300px;
+      }
+      &__list {
+        padding-left: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -60,24 +68,56 @@
     }
   }
 
-	.main {
-		.top {
-			&__content {
-				width: 230px;
-			}
-			&__title {
-				font-size: 20px;
-				margin-bottom: 20px;
-			}
-			&__text {
-				font-size: 10px;
-				margin-bottom: 20px;
-			}
-			&__img {
-				left: 180px;
-			}
-		}
-	}
+  .main {
+    .top {
+      &__content {
+        width: 230px;
+      }
+      &__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      &__text {
+        margin-bottom: 20px;
+      }
+      &__img {
+        left: 180px;
+      }
+    }
+    .about {
+      &__content {
+        min-width: 200px;
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-size: 10px;
+      }
+      .title {
+        font-size: 15px;
+      }
+      &__list {
+        margin-left: 27px;
+        margin-bottom: 33px;
+        gap: 0 10px;
+      }
+      &__item {
+        &-img {
+          margin-bottom: 6px;
+          &--s {
+            width: 120px;
+          }
+          &--m {
+            width: 150px;
+          }
+        }
+        &-text {
+          font-size: 6px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -133,57 +173,114 @@
 }
 
 @media (max-width: 480px) {
-	.main {
-		padding-bottom: 50px;
-		.top {
-			padding: 30px 0 50px;
-			&__content {
-				width: 180px;
-			}
-			&__title {
-				font-size: 15px;
-				margin-bottom: 15px;
-			}
-			&__text {
-				font-size: 8px;
-				margin-bottom: 15px;
-			}
-			&__img {
-				left: 167px;
-				&-l {
-					width: 309px;
-				}
-			}
-			&__buy {
-				font-size: 10px;
-				padding: 14px 41px;
-			}
-		}
-	}
+  .main {
+    .top {
+      padding: 30px 0 100px;
+      &__content {
+        width: 180px;
+      }
+      &__title {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+      &__text {
+        font-size: 8px;
+        margin-bottom: 15px;
+      }
+      &__img {
+        left: 167px;
+        &-l {
+          width: 309px;
+        }
+      }
+      &__buy {
+        font-size: 10px;
+        padding: 14px 41px;
+      }
+    }
+    .about {
+      &__inner {
+        align-items: flex-end;
+      }
+      &__content {
+        min-width: 170px;
+      }
+      &__list {
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-left: 10px;
+        gap: 0 5px;
+        align-items: flex-end;
+      }
+      &__item {
+        &-text {
+          display: none;
+        }
+        &-img {
+          &--s {
+            width: 80px;
+          }
+          &--m {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 360px) {
-	.main {
-		.top {
-			&__content {
-				width: 200px;
-				padding: 20px 0 0;
-			}
-			&__title {
-				font-size: 18px;
-			}
-			&__text {
-				position: relative;
-				z-index: 1;
-				font-size: 10px;
-			}
-			&__img {
-				right: 0;
-				top: 0;
-				&-l {
-					width: 185px;
-				}
-			}
-		}
-	}
+  body {
+    font-size: 8px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .main {
+    .top {
+      &__content {
+        width: 200px;
+        padding: 20px 0 0;
+      }
+      &__title {
+        font-size: 18px;
+      }
+      &__text {
+        position: relative;
+        z-index: 1;
+        font-size: 10px;
+      }
+      &__img {
+        right: 0;
+        top: 0;
+        &-l {
+          width: 185px;
+        }
+      }
+    }
+    .about {
+      padding-top: 25px;
+      padding-bottom: 10px;
+      &__content {
+        min-width: 233px;
+      }
+      &__list {
+        padding-left: 12px;
+        padding-bottom: 30px;
+        margin-left: 12px;
+        margin-bottom: 10px;
+        gap: 0 15px;
+      }
+      &__text {
+        font-size: 8px;
+      }
+      &__item {
+        &-img {
+          &--m {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

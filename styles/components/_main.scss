@@ -1,38 +1,37 @@
 .main {
-  background-color: var(--color-pink);
   overflow-x: clip;
-	padding-bottom: 150px;
-	.top {
-		padding: 40px 0 100px;
-		&__inner {
-			position: relative;
-		}
-		&__content {
-			max-width: 370px;
-			padding: 150px 0 250px;
-		}
-		&__title {
-			font-family: var(--font-family-yeseva);
-			font-size: 30px;
-			margin-bottom: 15px;
-		}
-		&__text {
-			font-family: var(--font-family-comfortaa);
-			font-size: 14px;
-			margin-bottom: 48px;
-		}
-		&__buy {
-			background-color: var(--color-yellow);
-			padding: 18px 54px;
-			font-family: var(--font-family-comfortaa);
-			font-size: 14px;
-			font-weight: 600;
-		}
-		&__img {
-			position: absolute;
-			top: 0;
-			left: 300px;
-			max-width: 100%;
-		}
-	}
+  .top {
+		background-color: var(--color-pink);
+    padding: 40px 0 150px;
+    &__inner {
+      position: relative;
+    }
+    &__content {
+      max-width: 370px;
+      padding: 150px 0 250px;
+    }
+    &__title {
+      font-family: var(--font-family-yeseva);
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-family: var(--font-family-comfortaa);
+      font-size: 14px;
+      margin-bottom: 48px;
+    }
+    &__buy {
+      background-color: var(--color-yellow);
+      padding: 18px 54px;
+      font-family: var(--font-family-comfortaa);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 300px;
+      max-width: 100%;
+    }
+  }
 }
