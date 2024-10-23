@@ -1,0 +1,39 @@
+.main {
+	.products {
+		.title {
+			font-family: var(--font-family-yeseva);
+		}
+		&__content {
+			gap: 50px 90px;
+		}
+		&__item {
+			width: 290px;
+			text-align: center;
+			margin: 0 auto;
+			&-img {
+				margin-bottom: 8px;
+			}
+			&-price {
+				margin-bottom: 12px;
+				font-size: 16px;
+				font-weight: 400;
+			}
+			&-title {
+				margin-bottom: 16px;
+				font-size: 16px;
+				font-family: var(--font-family-yeseva);
+				font-weight: 400;
+			}
+			&-text {
+				margin-bottom: 27px;
+				font-size: 12px;
+			}
+		}
+		.button {
+			padding: 18px 54px;
+			background: var(--color-yellow);
+			font-size: 14;
+			font-weight: 600;
+		}
+	}
+}

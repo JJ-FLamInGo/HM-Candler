@@ -84,10 +84,10 @@ p:where(:not([class]):not(:last-child)) {
 /**
   Упрощаем работу с изображениями
  */
-img {
-  display: block;
-  // max-width: 100%;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+// }
 
 /**
   Наследуем свойства шрифт для полей ввода

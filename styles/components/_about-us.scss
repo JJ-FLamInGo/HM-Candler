@@ -2,6 +2,7 @@
 	background-color: var(--color-beige-alt);
 	padding: 50px 0;
 	color: var(--color-gray);
+	margin-bottom: 150px;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -24,25 +25,24 @@
 		padding-left: 110px;
 		padding-bottom: 48px;
 		flex-basis: 930px;
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			left: -21px;
-			bottom: -11px;
-			background-image: url(../images/about-decor.png);
-			width: 22px;
-			height: 30px;
-		}
-		&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			background-color: var(--color-brown);
-			width: 1000%;
-			height: 1px;
-		}
+		// &::before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: -21px;
+		// 	bottom: -11px;
+		// 	background-image: url(../images/section-decor.png);
+		// 	width: 22px;
+		// 	height: 30px;
+		// }
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	background-color: var(--color-brown);
+		// 	width: 1000%;
+		// 	height: 1px;
+		// }
 	}
 	&__item {
 		&-img {
