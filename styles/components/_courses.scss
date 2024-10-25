@@ -1,0 +1,30 @@
+.courses {
+  &__item {
+		&-img {
+			position: relative;
+			font-size: 11px;
+		}
+    &-img p {
+      background-color: var(--color-beige);
+      color: var(--color-gray);
+    }
+    &-img .courses__title {
+      position: absolute;
+      left: 10px;
+      top: 45%;
+      padding: 15px 15px 15px 10px;
+    }
+    &-img .courses__time {
+      position: absolute;
+      left: 10px;
+      top: 60%;
+      padding: 8px 16px 8px 10px;
+    }
+    &-img .courses__price {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 19px 19px 19px 10px;
+    }
+  }
+}
