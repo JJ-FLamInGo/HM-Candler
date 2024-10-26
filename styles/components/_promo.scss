@@ -1,0 +1,25 @@
+.promo {
+  background-image: url(../images/promo-bg.jpg);
+  padding: 140px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    font-family: var(--font-family-yeseva);
+    font-size: 40px;
+    color: var(--color-pink);
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+  }
+  &__link {
+    color: #272727;
+    background-color: var(--color-yellow);
+    display: inline-block;
+    padding: 14px 25px 12px;
+  }
+}

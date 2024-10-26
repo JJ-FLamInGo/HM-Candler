@@ -30,6 +30,13 @@ button {
 	cursor: pointer;
 }
 
+.button {
+	padding: 18px 54px;
+	background: var(--color-yellow);
+	font-size: 14;
+	font-weight: 600;
+}
+
 .menu {
 	&__btn {
 		display: none;
