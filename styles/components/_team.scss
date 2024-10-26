@@ -1,0 +1,30 @@
+.team {
+	background-color: var(--color-beige-alt);
+	padding: 60px 0 80px;
+	color: var(--color-pink);
+	margin-bottom: 150px;
+	&__content {
+		padding-bottom: 0;
+		gap: 75px;
+	}
+	&__item {
+		position: relative;
+		&-box {
+			background-color: var(--color-brown);
+			text-align: center;
+			position: absolute;
+			width: 165px;
+			z-index: 4;
+			padding: 15px 10px 16px;
+			bottom: 16px;
+			right: 33px;
+		}
+		&-name {
+			font-size: 12px;
+			font-family: var(--font-family-yeseva);
+		}
+		&-descr {
+			font-size: 10px;
+		}
+	}
+}
