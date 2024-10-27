@@ -317,9 +317,9 @@ button {
 
 .main {
   overflow-x: clip;
+  background-color: var(--color-pink);
 }
 .main .top {
-  background-color: var(--color-pink);
   padding: 40px 0 150px;
 }
 .main .top__inner {
@@ -617,6 +617,49 @@ button {
   padding: 14px 25px 12px;
 }
 
+.contacts {
+  padding: 150px 0 50px;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  background-color: #fff;
+  width: 664px;
+  padding: 75px 42px 65px;
+}
+.form__title {
+  font-family: var(--font-family-yeseva);
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+.form__input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
+  padding: 7px 10px;
+  color: #000;
+}
+.form__input::placeholder {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--font-family-comfortaa);
+}
+.form__btn {
+  margin-top: 36px;
+  padding: 17px 34px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #272727;
+}
+
 @media (max-width: 1050px) {
   .main .steps__list {
     gap: 37px 35px;
@@ -677,6 +720,15 @@ button {
   }
   .main .certificates__slider {
     width: 880px;
+  }
+  .main .promo__link {
+    min-width: 135px;
+  }
+  .main .promo__text {
+    padding-left: 0;
+  }
+  .main .contacts__img {
+    width: 335px;
   }
   .section__inner {
     grid-template-columns: 290px auto;
@@ -903,6 +955,30 @@ button {
   .main .certificates__slider {
     width: 496px;
   }
+  .main .promo {
+    padding: 67px 0;
+  }
+  .main .promo__text {
+    font-size: 15px;
+  }
+  .main .promo__inner {
+    margin-right: 0;
+  }
+  .main .contacts__img {
+    width: 187px;
+    object-fit: cover;
+  }
+  .main .form {
+    padding: 30px 22px;
+    margin-right: 20px;
+  }
+  .main .form__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .main .form__btn {
+    margin-top: 10px;
+  }
   .main .feedback__content .swiper-pagination {
     bottom: 89px;
   }
@@ -965,6 +1041,18 @@ button {
 @media (max-width: 500px) {
   .footer__inner {
     flex-direction: column;
+  }
+  .main .promo__inner {
+    margin: 0 43px;
+  }
+  .main .promo__text {
+    margin-right: 32px;
+  }
+  .main .promo__link {
+    min-width: 79px;
+    font-size: 8px;
+    padding: 12px 17px 13px;
+    text-align: center;
   }
   .footer {
     padding: 50px 0;
@@ -1029,6 +1117,9 @@ button {
   .main .about__item-img--m {
     width: 140px;
   }
+  .main .team {
+    margin-bottom: 50px;
+  }
   .main .steps__list {
     gap: 25px 40px;
   }
@@ -1038,6 +1129,18 @@ button {
   .main .certificates__slider {
     width: 415px;
     margin: 0 auto;
+  }
+  .main .form {
+    margin-right: 0;
+  }
+  .main .form__input::placeholder {
+    font-size: 10px;
+  }
+  .main .contacts {
+    padding-top: 50px;
+  }
+  .main .contacts__img {
+    display: none;
   }
   .main .section {
     padding-bottom: 50px;
@@ -1083,6 +1186,12 @@ button {
     width: 151px;
     left: 148px;
     bottom: 15px;
+  }
+  .main .promo {
+    padding: 42px 0;
+  }
+  .main .promo__inner {
+    margin: 0;
   }
 }
 @media (max-width: 360px) {

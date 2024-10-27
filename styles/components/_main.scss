@@ -1,7 +1,7 @@
 .main {
   overflow-x: clip;
+	background-color: var(--color-pink);
   .top {
-		background-color: var(--color-pink);
     padding: 40px 0 150px;
     &__inner {
       position: relative;
